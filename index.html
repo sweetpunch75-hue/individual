@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Part 2 — Individual Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Individual DOM Exercises</h1>
+
+    <!-- Ex 1 -->
+    <section class="exercise-card">
+      <h3>Exercise 1: Interactive Counter</h3>
+      <span id="counterValue" class="counter-display">0</span>
+      <div class="btn-group">
+        <button id="decrementBtn" class="btn">- Decrease</button>
+        <button id="resetBtn" class="btn">Reset</button>
+        <button id="incrementBtn" class="btn">+ Increase</button>
+      </div>
+    </section>
+
+    <!-- Ex 2 -->
+    <section class="exercise-card">
+      <h3>Exercise 2: Feedback Character Limit</h3>
+      <textarea id="feedbackInput" maxlength="150" placeholder="Type your feedback here..."></textarea>
+      <p class="char-counter">Characters remaining: <span id="charCount">150</span></p>
+    </section>
+
+    <!-- Ex 3 -->
+    <section class="exercise-card">
+      <h3>Exercise 3: Tab Switcher</h3>
+      <div class="tabs-header">
+        <button class="tab-btn active" data-target="tab1">Overview</button>
+        <button class="tab-btn" data-target="tab2">Details</button>
+        <button class="tab-btn" data-target="tab3">Reviews</button>
+      </div>
+      <div class="tabs-content">
+        <div id="tab1" class="tab-pane active-pane">This is the overview content.</div>
+        <div id="tab2" class="tab-pane hidden-pane">These are the comprehensive details.</div>
+        <div id="tab3" class="tab-pane hidden-pane">Read what our users have to say.</div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="exercise-card">
+      <h3>Exercise 4: Modal Popup</h3>
+      <button id="openModalBtn" class="btn">Open Modal</button>
+
+      <div id="customModal" class="modal-overlay hidden">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>This is an interactive popup window controlled by vanilla JavaScript.</p>
+          <button id="closeModalBtn" class="btn">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="exercise-card">
+      <h3>Exercise 5: Dynamic Box Creator</h3>
+      <button id="addBoxBtn" class="btn">Generate Color Box</button>
+      <div id="boxContainer" class="box-grid"></div>
+    </section>
+
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
